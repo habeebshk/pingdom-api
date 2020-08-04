@@ -1,9 +1,9 @@
 {
-    "name": "sgrodzicki/pingdom",
+    "name": "habeebshk/pingdom",
     "type": "library",
     "description": "A PHP library for dealing with the Pingdom REST API",
     "keywords": ["pingdom", "api"],
-    "homepage": "https://github.com/sgrodzicki/pingdom",
+    "homepage": "https://github.com/habeebshk/pingdom-api",
     "license": "MIT",
     "authors": [
         {
