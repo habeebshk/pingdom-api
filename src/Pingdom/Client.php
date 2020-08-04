@@ -75,7 +75,7 @@ class Client
 	 */
 	public function getChecks()
 	{
-		$client = new \Guzzle\Service\Client('https://api.pingdom.com/api/2.0');
+		$client = new \Guzzle\Service\Client('https://api.pingdom.com/api/3.1');
 
 		/** @var $request \Guzzle\Http\Message\Request */
 		$request = $client->get('checks', array('App-Key' => $this->token));
@@ -93,7 +93,7 @@ class Client
 	 */
 	public function getProbes()
 	{
-		$client = new \Guzzle\Service\Client('https://api.pingdom.com/api/2.0');
+		$client = new \Guzzle\Service\Client('https://api.pingdom.com/api/3.1');
 
 		/** @var $request \Guzzle\Http\Message\Request */
 		$request = $client->get('probes', array('App-Key' => $this->token));
@@ -119,7 +119,7 @@ class Client
 	 */
 	public function getResults($checkId, $limit = 100, array $probes = null)
 	{
-		$client = new \Guzzle\Service\Client('https://api.pingdom.com/api/2.0');
+		$client = new \Guzzle\Service\Client('https://api.pingdom.com/api/3.1');
 
 		/** @var $request \Guzzle\Http\Message\Request */
 		$request = $client->get('results/' . $checkId, array('App-Key' => $this->token));
@@ -145,7 +145,7 @@ class Client
 	 */
 	public function getPerformanceSummary($checkId, $resolution = 'hour')
 	{
-		$client = new \Guzzle\Service\Client('https://api.pingdom.com/api/2.0');
+		$client = new \Guzzle\Service\Client('https://api.pingdom.com/api/3.1');
 
 		/** @var $request \Guzzle\Http\Message\Request */
 		$request = $client->get('summary.performance/' . $checkId, array('App-Key' => $this->token));
